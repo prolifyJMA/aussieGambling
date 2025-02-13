@@ -1,0 +1,31 @@
+G'DAY MATE! 
+IMPOHT ME FUNC HitTheSack;
+IMPOHT ME FUNC ChuckSomeDice;
+
+GIMME "Oi cobber, let's have a fang at chuckin' a wager for some bloody ripper bonus points, ya reckon?";
+
+THE HARD YAKKA FOR wageringBloodyPoints IS () <
+    I RECKON I'LL HAVE A WALKABOUT UNTIL (YEAH, NAH!) <
+        HitTheSack(500);
+        GIMME "3";
+        HitTheSack(500);
+        GIMME "2";
+        HitTheSack(500);
+        GIMME "1";
+        HitTheSack(500);
+
+        I RECKON roll = ChuckSomeDice(0, 100);
+        GIMME "Rollin' the dice, mate: " + roll;
+
+        YA RECKON roll > 50 ? <
+            GIMME "Crikey! That's a bloody lot of points, mate!";
+            MATE FUCK THIS;
+        > WHATABOUT ? <
+            GIMME "Nah, mate, that ain't enough points. Chuckin' the dice again!";
+        >
+    >
+>
+
+wageringBloodyPoints();
+
+CHEERS C***! 
